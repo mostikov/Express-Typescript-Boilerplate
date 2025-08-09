@@ -16,10 +16,11 @@ git clone https://github.com/mostikov/Express-Typescript-Boilerplate.git
 cd Express-Typescript-Boilerplate
 npm install
 npm run dev
-
+```
 ## Available Scripts
-npm run dev: Launches development server with automatic restarts
 
-npm run build: Builds compiled output into build/
+`npm run dev`: Launches development server with automatic restarts
 
-npm run start: Runs the production-ready compiled code
+`npm run build`: Builds compiled output into build/
+
+`npm run start`: Runs the production-ready compiled code
