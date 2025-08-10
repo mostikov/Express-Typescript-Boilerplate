@@ -5,10 +5,9 @@ import { initLogger } from 'utils'
 config()
 
 async function boot(): Promise<void> {
-  const {APP_HOST='localhost', APP_PORT='3000'} = process.env
+  const { APP_HOST = 'localhost', APP_PORT = '3000' } = process.env
 
   ;(globalThis as any).logger = initLogger()
-
 
   await initWebServer(APP_HOST, APP_PORT)
 }

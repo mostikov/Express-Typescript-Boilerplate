@@ -1,3 +1,3 @@
 export interface GlobalLogger {
-    log: (...args: any)=>void
+  log: (...args: any) => void
 }
