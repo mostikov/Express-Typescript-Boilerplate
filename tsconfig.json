@@ -47,6 +47,12 @@
             ],
             "@utils/*": [
                 "./src/utils/*"
+            ],
+            "@services": [
+                "./services/index"
+            ],
+            "@services/*": [
+                "./src/services/*"
             ]
         },
     }

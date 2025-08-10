@@ -1,24 +1,24 @@
 import { GlobalLogger } from 'types'
 
 class AppLogger implements GlobalLogger {
-    private transport: GlobalLogger = console // By default use regular console
+  private transport: GlobalLogger = console // By default use regular console
 
-    constructor(transport?: GlobalLogger){
-        transport && (this.transport = transport)
-        this.checkIsComplete()
-    }
+  constructor(transport?: GlobalLogger) {
+    transport && (this.transport = transport)
+    this.checkIsComplete()
+  }
 
-    private checkIsComplete(): void {
-        if (!this.transport){
-            throw new Error('Transport system for logger was not defined properly')
-        }
+  private checkIsComplete(): void {
+    if (!this.transport) {
+      throw new Error('Transport system for logger was not defined properly')
     }
+  }
 
-    log (...args: any) {
-        this.transport.log(...args)
-    }
+  log(...args: any) {
+    this.transport.log(...args)
+  }
 }
 
 export function initLogger(): GlobalLogger {
-    return new AppLogger(console)
+  return new AppLogger(console)
 }
