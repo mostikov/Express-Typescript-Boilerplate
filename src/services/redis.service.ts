@@ -1,9 +1,9 @@
-import { BaseService } from 'types'
+import type { BaseService, GlobalLogger } from 'types'
 
 export class RedisService implements BaseService {
-  public readonly name: string = 'RedisService'
+  public readonly name = 'RedisService'
 
-  constructor() {
-    logger.log(`${this.name} was created`)
+  constructor (private readonly logger: GlobalLogger) {
+    this.logger.log(`${this.name} was created`)
   }
 }

@@ -1,3 +1,3 @@
 export * from './errors.types'
-export { GlobalLogger } from './logger.types'
-export { BaseService } from './baseService'
+export type { GlobalLogger } from './logger.types'
+export type { BaseService } from './baseService'
