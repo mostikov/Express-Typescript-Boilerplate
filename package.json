@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc -p .",
     "dev": "NODE_PATH=./src nodemon --loader ts-node/esm src/entrypoint.ts",
-    "start": "NODE_PATH=./build node build/entrypoint.js"
+    "start": "NODE_PATH=./build node build/entrypoint.js",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix"
   },
   "author": "Alexander Mostovoy",
   "license": "ISC",

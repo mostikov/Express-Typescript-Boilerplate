@@ -1,4 +1,4 @@
-import { type Request, type Response, type NextFunction } from 'express'
+import { type NextFunction, type Request, type Response } from 'express'
 import { promisifyRequest } from 'utils'
 
 export const routeNotFound = promisifyRequest(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
